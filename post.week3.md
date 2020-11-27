@@ -78,3 +78,24 @@ System.out.print(postSum); //0
 ### 대입 연산자의 사용 예
 
 아래의 예제와 같이 변수의 우측에 대입 연산자를 쓴 뒤, 변수에 대입할 값을 쓰면 됩니다. 변수 선언과 동시에 대입하거나 변수를 선언한 후에 대입할 수 있습니다.
+
+~~~java
+int num = 3;
+//or
+int num;
+num = 3;
+~~~
+
+또한 우측에서 좌측으로 대입된 다는 점을 이용하여 다음과 같이 연쇄적으로 사용할 수 있습니다. 이 경우는 변수 선언과 동시에 할당은 할 수 없습니다.
+
+~~~java
+int x, y, z;
+
+x = y = z = 3;
+
+System.out.println(x); //3
+System.out.println(y); //3
+System.out.println(z); //3
+
+int x, y, z = 3; //error
+~~~
